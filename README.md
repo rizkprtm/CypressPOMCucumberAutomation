@@ -46,7 +46,7 @@ npm run cy:headless-run
 ## Test Report
 
 ```bash
-    1. Right click cucumber-report.html -> In case "Open In Browser plugin already installed
+    1. Right click cucumber-report.html -> In case "Open In Browser" plugin already installed
     2. Select open in browser default
     3. Or Simply just press Alt + B
 ```
