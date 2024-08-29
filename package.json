@@ -1,0 +1,32 @@
+{
+  "name": "cypress",
+  "version": "1.0.0",
+  "description": "BCICentralCypressAssignment",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "cy:open": "npx cypress open",
+    "cy:tvlk-search-hotel": "npx cypress run --browser chrome --headed --spec cypress/e2e/traveloka/features/searchHotels.feature",
+    "cy:headless-run": "npx cypress run --browser chrome --headless --spec cypress/e2e/traveloka/features/searchHotels.feature"
+  },
+  "author": "Muhammad Rizki Pratama",
+  "license": "ISC",
+  "devDependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^20.1.2",
+    "cypress": "^13.14.0"
+  },
+  "dependencies": {
+    "@cypress/browserify-preprocessor": "^3.0.2",
+    "dayjs": "^1.11.13"
+  },
+  "cypress-cucumber-preprocessor": {
+    "pretty": {
+      "enabled": true
+    },
+    "html": {
+      "enabled": true
+    },
+    "nonGlobalStepDefinitions": true,
+    "step_definitions": "cypress/support/step_definitions/*"
+  }
+}
